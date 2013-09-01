@@ -15,4 +15,8 @@ if (process.env.NODE_ENV == 'production') {
     // cfg.db.mongoUrl = process.env.MONGOHQ_URL;
 }
 
+console.log("NODE env is production:")
+console.log("port:", process.env.PORT)
+console.log("port:", process.env.PORT)
+
 module.exports = cfg;

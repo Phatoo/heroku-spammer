@@ -17,7 +17,7 @@ var express = require('express');
 var app = express();
 
 app.configure(function(){
-    app.listen(CFG.port);
+    app.listen(CFG.app.port);
     app.use(express.cookieParser());
     app.use(express.bodyParser());
     app.use(express.methodOverride());
@@ -31,6 +31,8 @@ app.configure("development", function() {
         showStack: true
     })
 })          
+
+console.log("123");
 
 app.configure("production", function() {
     app.use(express.errorHandler,{
