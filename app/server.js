@@ -39,6 +39,6 @@ app.configure("production", function() {
     })
 })  
 
-APP.modules.mongoose.connect(CFG.db.mongoUrl, {});
+// APP.modules.mongoose.connect(CFG.db.mongoUrl, {});
 
 console.log('Server started on port', 5000)
